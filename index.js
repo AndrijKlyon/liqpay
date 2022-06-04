@@ -1,17 +1,5 @@
 let liqpay = require('./liqpay');
 
-// let public_key = 'i00000000';
-// let private_key = 'a4825234f4bae72a0be04eafe9e8e2bada209255';
-
-// let params={
-//     "public_key":"i00000000",
-//     "version":"3",
-//     "action":"pay",
-//     "amount":"3",
-//     "currency":"UAH",
-//     "description":"test",
-//     "order_id":"000001"
-// }
 const PUBLIC_KEY = 'sandbox_i31449529239';
 const PRIVATE_KEY = 'sandbox_HE5rqWCsd1YjBQzZIY7fnhlYbG4flByfDdGxgqyW';
 
