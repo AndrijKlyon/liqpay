@@ -1,0 +1,16 @@
+{
+  "name": "lq2",
+  "version": "1.0.0",
+  "description": "liqpay",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify index.js -o bundle.js",
+    "watch": "watchify index.js -o bundle.js --debug --verbose",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "liqpay"
+  ],
+  "author": "Klyon Andrij",
+  "license": "ISC"
+}
