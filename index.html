@@ -21,9 +21,17 @@
 			</div>
 		</div>
 		<div class="row d-flex align-items-center">
-			<div class="col text-center" id="pay_form"></div>
+			<div class="col text-center">
+				<!-- <div class="col text-center" id="pay_form"></div> -->
+				<form method="POST" class="invisible" name="payForm" action="https://www.liqpay.ua/api/3/checkout" accept-charset="utf-8">
+					<input type="hidden" name="data" value="" />
+					<input type="hidden" name="signature" value="" />
+					<input type="image" src="//static.liqpay.ua/buttons/p1ru.radius.png" name="btn_text" />
+				</form>
+			</div>
 		</div>
 	</div>
-    <script src="bundle.js"></script>
+    <!-- <script src="bundle.js"></script> -->
+	<script src="test.js"></script>
 </body>
 </html>
