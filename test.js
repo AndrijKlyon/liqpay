@@ -10,7 +10,7 @@ function showPayForm(e) {
     let amount = +startForm.amount.value;
     console.log(amount);
 
-    fetch('http://localhost:3022/api/payments', {
+    fetch('http://localhost:3022/api/payments/liqpay', {
     method: 'POST',
     body: JSON.stringify({
         amount
@@ -22,8 +22,8 @@ function showPayForm(e) {
     .then((response) => response.json())
     .then((json) => {
         console.log(json);
-        payForm.data.value = json.data;
-        payForm.signature.value=json.signature;
+        payForm.data.value = json.liqpayCheckoutRequestData.data;
+        payForm.signature.value = json.liqpayCheckoutRequestData.signature;
         payForm.classList.remove('invisible');
     });
 }
